@@ -18,9 +18,9 @@ function CodeEditor(){
 
     try{
       const res = await axios.post(
-        "https://your-render-url.onrender.com/review",
-        { code }
-      );
+  "https://ai-code-reviwer-r9v6.onrender.com/review",
+  { code }
+);
 
       setReview(res.data.review);
       setLanguage(res.data.language || "Unknown");
@@ -39,9 +39,9 @@ function CodeEditor(){
 
     try{
       const res = await axios.post(
-        "https://your-render-url.onrender.com/explain",
-        { code }
-      );
+  "https://ai-code-reviwer-r9v6.onrender.com/explain",
+  { code }
+);
 
       setExplanation(res.data.explanation);
       setLanguage(res.data.language || "Unknown");
