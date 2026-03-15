@@ -18,7 +18,7 @@ function CodeEditor(){
 
     try{
       const res = await axios.post(
-        "http://localhost:5000/review",
+        "https://your-render-url.onrender.com/review",
         { code }
       );
 
@@ -39,7 +39,7 @@ function CodeEditor(){
 
     try{
       const res = await axios.post(
-        "http://localhost:5000/explain",
+        "https://your-render-url.onrender.com/explain",
         { code }
       );
 
